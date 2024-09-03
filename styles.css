@@ -21,21 +21,99 @@
 
 body {
     font-family: 'Outfit', sans-serif;
+    background-color: #f5e7da;
+    margin: 0;
+    padding: 0;
 }
 
-h1,
-h2,
+#recipe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#recipe-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header-img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#recipe-heading {
+    font-family: 'YoungSerif', serif;
+    font-size: 2rem;
+    color: #8B4513;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+#prep-div {
+    margin-top: 2rem;
+    background-color: #fde1ef;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
 h3 {
+    font-family: 'YoungSerif', serif;
+    color: #8B4513;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+li {
     font-family: 'Outfit', sans-serif;
-    font-weight: bold;
-    /* or normal, depending on the weight you want */
+    padding: 0.2rem 0;
 }
 
-h3 {
-    color: brown;
+#Nutrition-table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    margin-top: 1rem;
 }
 
-li{
-    font-family: 'Outfit';
+#Nutrition-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
 }
 
+.nutrition-description {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    #recipe-card {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    #recipe-heading {
+        font-size: 1.75rem;
+    }
+
+    p, li {
+        font-size: 0.9rem;
+    }
+}
