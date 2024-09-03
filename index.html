@@ -1,77 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
+
   <title>Frontend Mentor | Recipe page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    #header-img {
+      width: 100%;
+      border-radius: 10px;
+      /* size: ; */
+    }
+
+    #recipe-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(255, 239, 196);
+      padding: 2rem;
+    }
+
+    #recipe-card {
+      padding: 2rem;
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    #recipe-heading {
+      margin: 1rem 1rem 1rem 0;
+    }
+
+    #prep-div {
+      margin-top: 2rem;
+      background-color: rgb(253, 235, 255);
+      padding: 0.1rem 0 0.5rem 1rem;
+      border-radius: 10px;
+    }
+
+    li {
+      padding: 0.2rem;
+    }
+
+    #Nutrition-table{
+      width: 100%;
+    }
+
+    #Nutrition-table td {
+      border-bottom: 1px solid lightgray ;
+      padding: 1rem;
+    }
   </style>
 </head>
+
 <body>
+  <div id="recipe-container">
+    <div id="recipe-card">
+      <div>
+        <img id="header-img" src="./assets/images/image-omelette.jpeg" alt="food-image">
+      </div>
 
-  Simple Omelette Recipe
+      <div>
+        <h2 id="recipe-heading">Simple Omelette Recipe</h2>
+      </div>
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      <div>
+        <p style="font-size: x-small;">An easy and quick dish, perfect for any meal. This classic omelette combines
+          beaten eggs cooked
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      </div>
 
-  Preparation time
+      <div id="prep-div">
+        <h3 style="color: rgb(180, 43, 226);">Preparation time</h3>
 
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
+        <ul>
+          <li><b>Total:</b> Approximately 10 minutes</li>
+          <li><b>Preparation:</b> 5 minutes</li>
+          <li><b>Cooking:</b> 5 minutes</li>
+        </ul>
 
-  Ingredients
+      </div>
 
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
+      <h3>Ingredients</h3>
+      <ul>
 
-  Instructions
+        <li> 2-3 large eggs</li>
+        <li> Salt, to taste</li>
+        <li> Pepper, to taste</li>
+        <li> 1 tablespoon of butter or oil</li>
+        <li> Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
 
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
+      <h3>Instructions</h3>
+      <ol>
 
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
 
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
+        <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+          You can add a tablespoon of water or milk for a fluffier texture.</li>
 
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
+        <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.
+        </li>
+        <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
+          the eggs evenly coat the surface.
+        </li>
+        <li>
+          <b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the
+          middle, sprinkle your chosen fillings over one half of the omelette.
+        </li>
+        <li>
+          <b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the
+          fillings. Let it cook for another minute, then slide it onto a plate.
+        </li>
+        <li>
+          <b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.
+        </li>
+      </ol>
+      <h3>Nutrition</h3>
 
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
+      The table below shows nutritional values per serving without the additional fillings.
 
-  Enjoy: Serve hot, with additional salt and pepper if needed.
+      <table id="Nutrition-table">
+        <tr>
+          <td>Calories</td>
+          <td style="color: brown;"><b>277kcal</b></td>
+        </tr>
+        <tr>
+          <td>Carbs</td>
+          <td style="color: brown;"><b>0g</b></td>
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <td style="color: brown;"><b>20g</b></td>
+        </tr>
+        <tr>
+          <td>Fat</td>
+          <td style="color: brown;"><b>22g</b></td>
+        </tr>
+      </table>
 
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Shrey Talreja</a>.
+      </div> -->
+    </div>
   </div>
 </body>
+
 </html>
